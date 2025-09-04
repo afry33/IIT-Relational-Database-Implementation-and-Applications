@@ -1,0 +1,22 @@
+Status
+Database and Tables Created Successfully
+Author_Count
+16
+Book_Count
+16
+Customer_Count
+16
+Order_Count
+20
+Order_Detail_Count
+34
+Tables_in_OnlineBookstore
+Authors
+BestsellingBooks
+BookDetails
+Books
+CustomerOrderSummary
+Customers
+Order_Details
+Orders
+OrdersArchive

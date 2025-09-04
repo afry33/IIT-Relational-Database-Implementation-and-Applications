@@ -1,0 +1,77 @@
+coder@86da93785215:~/project/Module 1$ mysql -u root -p < complete_assignment.sql > assignment_output.txt 2>&1
+Enter password: 
+
+coder@86da93785215:~/project/Module 1$ 
+coder@86da93785215:~/project/Module 1$ # View the output
+coder@86da93785215:~/project/Module 1$ cat assignment_output.txt
+Status
+Database and Tables Created Successfully
+Author_Count
+16
+Book_Count
+16
+Customer_Count
+16
+Order_Count
+20
+Order_Detail_Count
+34
+Tables_in_OnlineBookstore
+Authors
+BestsellingBooks
+BookDetails
+Books
+CustomerOrderSummary
+Customers
+Order_Details
+Orders
+OrdersArchive
+coder@86da93785215:~/project/Module 1$ 
+coder@86da93785215:~/project/Module 1$ # Verify everything worked by checking the database
+coder@86da93785215:~/project/Module 1$ mysql -u root -p -e "USE OnlineBookstore; SHOW TABLES; SELECT COUNT(*) AS Authors FROM Authors; SELECT COUNT(*) AS Books FROM Books;"
+Enter password: 
++---------------------------+
+| Tables_in_OnlineBookstore |
++---------------------------+
+| Authors                   |
+| BestsellingBooks          |
+| BookDetails               |
+| Books                     |
+| CustomerOrderSummary      |
+| Customers                 |
+| Order_Details             |
+| Orders                    |
+| OrdersArchive             |
++---------------------------+
++---------+
+| Authors |
++---------+
+|      16 |
++---------+
++-------+
+| Books |
++-------+
+|    16 |
++-------+
+coder@86da93785215:~/project/Module 1$ # Show database structure
+coder@86da93785215:~/project/Module 1$ mysql -u root -p -e "USE OnlineBookstore; SHOW TABLES;" > evidence_tables.txt
+ OnlineBookstore; 
+SELECT 'Authors' as Table_Name,Enter password: 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+coder@86da93785215:~/project/Module 1$ s', COUNT(*) FROM Books
+> UNION SELECT 'Customers', COUNT(*) FROM Customers
+> UNION SELECT 'Orders', COUNT(*) FROM Orders
+> UNION SELECT 'Order_Details', COUNT(*) FROM Order_Details;" > evidence_counts.txt
+> 
+> # Show indexes
+> mysql -u root -p -e "USE OnlineBookstore; SHOW INDEX FROM Books; SHOW INDEX FROM Orders;" > evidence_indexes.txt
+> 
+> # Show views
+> mysql -u root -p -e "USE OnlineBookstore; SHOW FULL TABLES WHERE Table_type = 'VIEW';" > evidence_views.txt
+> 
+> # Show triggers
+> mysql -u root -p -e "USE OnlineBookstore; SHOW TRIGGERS;" > evidence_triggers.txt
+> 
+> # Show procedures
+> mysql -u root -p -e "USE OnlineBookstore; SHOW PROCEDURE STATUS WHERE Db = 'OnlineBookstore';" > evidence_procedures.txt
+> 
