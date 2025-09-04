@@ -9,14 +9,16 @@ Customer_Count
 Order_Count
 20
 Order_Detail_Count
-34
+41
 Tables_in_OnlineBookstore
+AuthorPerformance
 Authors
 BestsellingBooks
 BookDetails
 Books
 CustomerOrderSummary
 Customers
+InventoryAnalysis
 Order_Details
 Orders
 OrdersArchive

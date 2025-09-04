@@ -1,0 +1,61 @@
+15 ADVANCED SQL QUERIES - DOCUMENTATION
+
+Query 1: Top 5 Bestselling Books with Ranking
+- Purpose: Identify top-selling books using window ranking functions
+- Features: RANK() window function, ORDER BY
+
+Query 2: Monthly Sales Trend with Rolling Average
+- Purpose: Analyze sales trends with moving average calculation
+- Features: OLAP query, window functions with ROWS BETWEEN
+
+Query 3: Customer Lifetime Value Analysis
+- Purpose: Segment customers by spending using NTILE window function
+- Features: CTE, NTILE(), window functions
+
+Query 4: Author Performance Comparison
+- Purpose: Compare authors using multiple ranking methods
+- Features: RANK(), PERCENT_RANK(), window aggregates
+
+Query 5: Book Price Analysis with Window Functions
+- Purpose: Analyze price distribution and categorization
+- Features: Window aggregates, CASE statements, PERCENT_RANK()
+
+Query 6: Customer Order Frequency Analysis
+- Purpose: Analyze ordering patterns and frequency
+- Features: LAG() function, date calculations, window functions
+
+Query 7: Stock Value Analysis by Category
+- Purpose: Inventory analysis with rollup totals
+- Features: GROUP BY WITH ROLLUP, conditional categorization
+
+Query 8: Sales Performance by Author Nationality
+- Purpose: Analyze sales by author country with ranking
+- Features: RANK() window function, multi-table joins
+
+Query 9: Cumulative Revenue Analysis
+- Purpose: Calculate running totals and percentages
+- Features: Cumulative window functions, percentage calculations
+
+Query 10: Book Popularity vs Price Correlation
+- Purpose: Analyze relationship between price and sales
+- Features: Multiple RANK() functions, correlation analysis
+
+Query 11: Customer Cohort Analysis
+- Purpose: Analyze customer retention over time
+- Features: Complex CTEs, cohort analysis, retention rates
+
+Query 12: Price Elasticity Analysis
+- Purpose: Analyze how price affects sales volume
+- Features: Window aggregates, deviation calculations, categorization
+
+Query 13: Time-based Sales Analysis
+- Purpose: Analyze sales patterns by time dimensions
+- Features: Multiple window functions, time-based analysis
+
+Query 14: Customer Segmentation by Purchase Behavior
+- Purpose: RFM analysis for customer segmentation
+- Features: NTILE(), complex CASE statements, RFM analysis
+
+Query 15: Advanced OLAP with Multiple Grouping Sets
+- Purpose: Comprehensive multi-dimensional analysis
+- Features: GROUPING SETS, OLAP, multiple aggregation levels
